@@ -27,14 +27,22 @@ module.exports = {
 	database_policy: {
 		retry: 0
 	},
-	databases: {
+	nosql: {
+		ok: 'connected to database:',
+		fail: 'error connection at database',
+		database_policy: {
+			retry: 0
+		},
 		geoip: {
-			host: 'localhost',
-			port: 27017,
-			database: 'geoip',
-			user: '',
-			password: ''
-		}
+			//@ format mongodb://<dbUser>:<dbPassword>@<host1>:<port1>,<host2>:<port2>/<dbName>?replicaSet=<replicaSetName>
+			uri: "mongodb://localhost:27017,localhost:27018,localhost:27019/geoip?replicaSet=rs0",
+			options: {
+				keepAlive: 1,
+				connectTimeoutMS: 30000,
+				socketTimeoutMS: 0,
+				autoReconnect: true
+			}
+		},
 	},
 	collections: {
 		geoip: 'geoip'

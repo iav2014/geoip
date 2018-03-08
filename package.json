@@ -20,11 +20,14 @@
   },
   "dependencies": {
     "async": "0.2.9",
+    "bson": "^2.0.2",
     "express": "4.5.1",
     "log4js": "0.6.9",
-    "moment": "2.19.3",
-    "mongodb": "^1.4.7",
+    "moment": "^2.19.3",
+    "mongod": "^2.0.0",
+    "mongodb": "^1.4.40",
     "request": "2.29.0",
+    "require_optional": "^1.0.1",
     "revalidator": "0.1.5"
   },
   "devDependencies": {
@@ -35,8 +38,8 @@
     "should": "2.0.2",
     "sinon": "~1.7.3",
     "sinon-chai": "2.4.0",
-    "stack-trace":"0.0.9",
-    "line-reader":"0.2.4"
+    "stack-trace": "0.0.9",
+    "line-reader": "0.2.4"
   },
   "keywords": []
 }
