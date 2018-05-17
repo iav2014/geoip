@@ -1,5 +1,5 @@
-geoip: a rest nodejs service
-===========================
+geoip: a rest nodejs service with geolocation
+==============================================
 
 Prototype node js server (rest server) with geoip locator
 This project is a prototype made ​​in node js based on routes and services.
